@@ -19,7 +19,7 @@ export function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass-strong bg-bg/95 shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-bg/98 backdrop-blur-md shadow-lg border-b border-border' : 'bg-transparent'
       }`}
       role="banner"
     >
@@ -30,7 +30,7 @@ export function Navigation() {
             className="font-display text-2xl md:text-3xl font-bold text-text text-gradient-primary"
             aria-label="Cr4cot - Accueil"
           >
-            Cr4cot
+            Cr4cot®
           </a>
 
           <div className="hidden md:flex items-center gap-1">
@@ -38,7 +38,7 @@ export function Navigation() {
               <a
                 key={item.id}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-text-muted hover:text-text transition-colors duration-200 rounded-lg hover:bg-bg-elevated"
+                className="px-4 py-2 text-sm font-medium text-text-muted hover:text-primary transition-colors duration-200 rounded-lg hover:bg-bg-elevated"
               >
                 {item.label}
               </a>
@@ -79,7 +79,7 @@ export function Navigation() {
                 key={item.id}
                 href={item.href}
                 onClick={handleLinkClick}
-                className="px-4 py-3 text-base font-medium text-text-muted hover:text-text transition-colors duration-200 rounded-lg hover:bg-bg-elevated border border-border"
+                className="px-4 py-3 text-base font-medium text-text-muted hover:text-primary transition-colors duration-200 rounded-lg hover:bg-bg-elevated border border-border"
               >
                 {item.label}
               </a>
