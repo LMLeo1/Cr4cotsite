@@ -46,6 +46,14 @@ export const IconChevronUp = createIcon([
   <path key="1" d="M18 15L12 9 6 15" />,
 ]);
 
+export const IconChevronLeft = createIcon([
+  <path key="1" d="M15 18l-6-6 6-6" />,
+]);
+
+export const IconChevronRight = createIcon([
+  <path key="1" d="M9 6l6 6-6 6" />,
+]);
+
 export const IconArrowRight = createIcon([
   <path key="1" d="M5 12h14" />,
   <path key="2" d="M12 5l7 7-7 7" />,
